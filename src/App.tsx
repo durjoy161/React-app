@@ -1,10 +1,14 @@
+import HeroSection from "./components/HeroSection"
 import Nav from "./components/Nav"
 
 function App() {
 
   return (
     <>
-      <Nav></Nav>
+      <Nav />
+      <main className="mt-24">
+        <HeroSection />
+      </main>
     </>
   )
 }
