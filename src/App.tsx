@@ -3,6 +3,7 @@ import HeroSection from "./components/HeroSection"
 import Nav from "./components/Nav"
 import Technologies from "./components/Technologies/Technologies";
 import type { ITechnology } from "./Type/technologyType";
+import { ToastContainer } from "react-toastify";
 
 function App() {
 
@@ -16,10 +17,11 @@ function App() {
       <Nav />
       <main className="mt-24">
         <HeroSection />
-        <Suspense>
+        <Suspense fallback={<h2>Loading...</h2>}>
           <Technologies technologiesPromise={technologiesPromise()}></Technologies>
         </Suspense>
       </main>
+      <ToastContainer />
     </>
   )
 }

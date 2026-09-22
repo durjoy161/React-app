@@ -1,15 +1,15 @@
 import { use, useState } from "react";
-import { toast } from "react-toastify";
 import type { ITechnology } from "../../Type/technologyType";
 import TechnologiesCard from "./TechnologiesCard";
 import YourStack from "./YourStack";
+import { toast } from "react-toastify";
 
 interface TechnologiesProps {
-  techologiesPromise: Promise<ITechnology[]>;
+  technologiesPromise: Promise<ITechnology[]>;
 }
 
-const Technologies = ({ techologiesPromise }: TechnologiesProps) => {
-  const technologies = use(techologiesPromise);
+const Technologies = ({ technologiesPromise }: TechnologiesProps) => {
+  const technologies = use(technologiesPromise);
 
   const [selectedTechnologies, setSelectedTechnologies] = useState<ITechnology[]>([]);
 
