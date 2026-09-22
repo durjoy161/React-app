@@ -48,7 +48,6 @@ const Technologies = ({ technologiesPromise }: TechnologiesProps) => {
     <section className="bg-[#f8fafc] py-16">
       <div className="mx-auto container px-5">
 
-        {/* Header */}
         <div className="mb-10">
           <h1 className="text-4xl font-bold text-[#202b3d]">
             Explore the{" "}
@@ -62,10 +61,8 @@ const Technologies = ({ technologiesPromise }: TechnologiesProps) => {
           </p>
         </div>
 
-        {/* Main Content */}
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-[1fr_300px]">
 
-          {/* Technologies */}
           <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3">
             {technologies.map((technology) => {
               const isAdded = selectedTechnologies.some(
@@ -83,7 +80,6 @@ const Technologies = ({ technologiesPromise }: TechnologiesProps) => {
             })}
           </div>
 
-          {/* Your Stack */}
           <YourStack
             selectedTechnologies={selectedTechnologies}
             onRemove={handleRemoveTechnology}
