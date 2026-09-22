@@ -5,17 +5,17 @@ Dev Stack
 Dev Stack is a web application where users can explore different technologies and add their favorite technologies to build their own developer stack.
 ---
 # Technologies Used
--React.js
--Tailwind CSS, DaisyUI
--TypeScript / JavaScript (ES6+)
--React-Toastify (NPM Package)
--JSON (for technology data)
--Vite (build tool)
+- React.js
+- Tailwind CSS, DaisyUI
+- TypeScript / JavaScript (ES6+)
+- React-Toastify (NPM Package)
+- JSON (for technology data)
+- Vite (build tool)
 ---
 # Features
--Users can explore different technologies with their details.
--Users can add technologies to their personal stack.
--Users can remove a technology or remove all technologies from their stack.
+- Users can explore different technologies with their details.
+- Users can add technologies to their personal stack.
+- Users can remove a technology or remove all technologies from their stack.
 ---
 # React Questions
 
