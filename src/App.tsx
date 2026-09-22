@@ -4,6 +4,7 @@ import Nav from "./components/Nav"
 import Technologies from "./components/Technologies/Technologies";
 import type { ITechnology } from "./Type/technologyType";
 import { ToastContainer } from "react-toastify";
+import Footer from "./components/Footer";
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
           <Technologies technologiesPromise={technologiesPromise()}></Technologies>
         </Suspense>
       </main>
+      <Footer />
       <ToastContainer />
     </>
   )
